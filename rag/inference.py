@@ -65,13 +65,13 @@ def get_response(user_query):
         formatted_output = format_topic(topic_result)
 
         return {
-            'succes': True,
+            'success': True,
             'response': formatted_output,
             'raw_data': topic_result
         }
     except Exception as e:
         return {
-            'succes': False,
+            'success': False,
             'error': f"Ошиибка обработки запроса: {str(e)}",
             'response': "⚠️ Произошла ошибка при обработке вашего запроса"
         }
